@@ -43,7 +43,7 @@ const Modal = ({ isOpen, OnClose, title, children, size = 'md', footer }) => {
     <div className='fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4'>
       <div
         ref={modalRef}
-        className={`bg-white rounded-lg shadow-lg w-full${sizeClasses[size]} max-h-[90vh] flex flex-col`}
+        className={`bg-white rounded-lg shadow-lg w-full ${sizeClasses[size]} max-h-[90vh] flex flex-col`}
       >
         <div className='px-6 py-4 border border-gray-200 flex justify-between items-center'>
           <h2 className='text-xl font-semibold text-gray-800'>{title}</h2>

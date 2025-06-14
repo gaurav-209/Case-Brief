@@ -4,7 +4,7 @@ const Input = ({
     label,
     error,
     fullWidth,
-    className,
+    className = '',
     id,
     ...props
 }) => {
@@ -24,6 +24,7 @@ const Input = ({
             <input 
             id={id} 
             className={`rounded-md shadow-sm border py-2 px-3 focus:outline-none focus:ring-2 focus:ring-opacity-50 ${errorClass} ${widthClass}`}
+            {...props}
             />
             {error && <p className='mt-1 text-sm text-error-500'>{error}</p>}
         </div>
